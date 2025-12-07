@@ -1,0 +1,30 @@
+# Source files
+src/
+test/
+examples/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.github/
+.gitignore
+
+# Documentation (except README)
+CLAUDE.md
+AGENTS.md
+CONTRIBUTING.md
+
+# Development
+node_modules/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build artifacts (keep dist/ - it's in package.json files field)
+*.tsbuildinfo

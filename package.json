@@ -2,20 +2,50 @@
   "name": "express-type-safe-routes",
   "version": "0.1.0",
   "description": "Type-safe Express routes with Zod-powered inference for params, query, body, and responses.",
+  "keywords": [
+    "express",
+    "typescript",
+    "type-safe",
+    "zod",
+    "validation",
+    "routes",
+    "api",
+    "rest",
+    "middleware",
+    "request-validation"
+  ],
+  "homepage": "https://github.com/ipgthb/express-type-safe-routes#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipgthb/express-type-safe-routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipgthb/express-type-safe-routes/issues"
+  },
+  "author": {
+    "name": "Ian Pinto",
+    "url": "https://github.com/ipgthb"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
+    "prepublishOnly": "pnpm run build && pnpm test && pnpm test:types",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:types": "tsd",

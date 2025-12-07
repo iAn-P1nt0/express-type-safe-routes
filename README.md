@@ -326,10 +326,10 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 ## License
 
-MIT © [Your Name]
+MIT © [Ian Pinto](https://github.com/ipgthb)
 
 ## Related Projects
 
-- [express-middleware-chain](https://github.com/yourusername/express-middleware-chain) - Fluent middleware composition for Express
+- [express-middleware-chain](https://github.com/ipgthb/express-middleware-chain) - Fluent middleware composition for Express
 - [Zod](https://github.com/colinhacks/zod) - TypeScript-first schema validation
 - [tRPC](https://trpc.io) - End-to-end typesafe APIs
